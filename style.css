@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+
+}
+.container {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  color: white;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0.2)),
+    url("./images/globe-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
+}
+h1 {
+  font-size: 80px;
+  font-weight: bolder;
+  padding-bottom: -100px;
+  margin-bottom: -10px;
+}
+h2 {
+  margin-bottom: -5px;
+}
+.letras-rojo {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+}
+.letras-verdes {
+  color: rgb(0, 255, 0);
+  font-weight: bold;
+}
+.botones {
+  display: flex;
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+
+button {
+  flex-grow: 1;
+  background: radial-gradient(
+    circle,
+    rgba(153, 104, 255, 1) 0%,
+    rgba(106, 34, 255, 1) 90%
+  );
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgb(83, 0, 255);
+  background: radial-gradient(
+    circle,
+    rgba(83, 0, 255, 1) 0%,
+    rgba(57, 2, 171, 1) 100%
+  );
+}
+button.pulsado {
+  background: rgb(83, 0, 255);
+  background: radial-gradient(
+    circle,
+    rgba(83, 0, 255, 1) 0%,
+    rgba(57, 2, 171, 1) 100%
+  );
+}
+.buscar {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.input {
+  border: none;
+  width: 15%;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: text;
+  position: relative;
+  text-align: left;
+}
+.input:focus {
+  outline: 2px solid rgb(131, 189, 255);
+}
+.input::placeholder {
+  text-align: center;
+}
+.fa-magnifying-glass {
+  margin-left: 5px;
+  font-size: 20px;
+}
+/*---- parte de abajo (paises) ----*/
+.paises {
+  background-color: #feffe3;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 150px));
+  grid-template-rows: repeat(auto-fill, minmax(200px, 150px));
+  padding: 100px;
+  grid-gap: 50px;
+  width: calc(100vw - 200px);
+  min-height: 100vh;
+}
+.item {
+  color: white;
+  font-weight: bolder;
+  background-image: linear-gradient(rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0.3)),
+    url(./images/map_image.jpg);
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  min-height: 200px;
+}
