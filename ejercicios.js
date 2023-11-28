@@ -31,7 +31,7 @@ input.addEventListener("input", () => {
     );
     letras_rojo.textContent = input.value;
     letras_verde.textContent = resultados.length;
-    busqueda.innerHTML = `Countries start with <span class="letras-rojo">${letras_rojo.textContent}</span> are <span class="letras-verdes">${letras_verde.textContent}</span>`;
+    busqueda.innerHTML = `Países que empiezano por <span class="letras-rojo">${letras_rojo.textContent}</span> son <span class="letras-verdes">${letras_verde.textContent}</span>`;
     pintarPaises(resultados);
   } else if (withButton.classList.contains("pulsado")) {
     // boton with
@@ -43,7 +43,7 @@ input.addEventListener("input", () => {
     );
     letras_rojo.textContent = input.value;
     letras_verde.textContent = resultados.length;
-    busqueda.innerHTML = `Countries contains <span class="letras-rojo">${letras_rojo.textContent}</span> are <span class="letras-verdes">${letras_verde.textContent}</span>`;
+    busqueda.innerHTML = `Países que contienen <span class="letras-rojo">${letras_rojo.textContent}</span> son <span class="letras-verdes">${letras_verde.textContent}</span>`;
     pintarPaises(resultados);
   }
 });
